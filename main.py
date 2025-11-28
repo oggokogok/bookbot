@@ -3,13 +3,13 @@ def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     num_words = count_words(text)
-    chars_dict = count_characters(text)
-    chars_sorted_list = sort_list(chars_dict)
+    #chars_dict = count_characters(text)
+    #chars_sorted_list = sort_list(chars_dict)
     print(f"{num_words} words found in book")
-    for item in chars_sorted_list:
-        if not item["char"].isalpha():
-            continue
-        print(f"the'{item['char']}' character was found {item['count']} times")
+    #for item in chars_sorted_list:
+    #    if not item["char"].isalpha():
+    #        continue
+    #    print(f"the'{item['char']}' character was found {item['count']} times")
 
 def get_book_text(path):
     with open(path) as f:
