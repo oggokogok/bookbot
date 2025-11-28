@@ -3,7 +3,7 @@ def main():
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     num_words = count_words(text)
-    print(f"{num_words} total words")
+    print(f"Found {num_words} total words")
     #chars_dict = count_characters(text)
     #chars_sorted_list = sort_list(chars_dict)
     #print(f"{num_words} words found in book")
