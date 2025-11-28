@@ -15,7 +15,7 @@ def main():
         if not item["char"].isalpha():
             continue
         #print(f"the'{item['char']}' character was found {item['count']} times")
-        print f"{item['char']}: {item['count']}"
+        print(f"{item['char']}: {item['count']}")
 def get_book_text(path):
     with open(path) as f:
         return f.read()
