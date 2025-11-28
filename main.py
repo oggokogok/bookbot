@@ -1,5 +1,7 @@
 from stats import count_words
+import sys
 def main():
+    print(f"test {sys.argv}")
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     num_words = count_words(text)
